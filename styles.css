@@ -1,0 +1,84 @@
+:root {
+  --transition-time: 0.5s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  height: 400px;
+}
+
+.carousel img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel button {
+  background-color: transparent;
+  border: 0;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+.carousel>button {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel>button:hover {
+  color: gray;
+  transition: var(--transition-time);
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.carousel-left,
+.carousel-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  margin: 0px 20px;
+}
+
+.carousel-right {
+  right: 0;
+}
+
+.carousel nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.carousel nav>button {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.carousel nav>button:hover {
+  color: gray;
+  transition: var(--transition-time);
+}
