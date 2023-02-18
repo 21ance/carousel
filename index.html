@@ -11,24 +11,24 @@
 
 <body>
   <div class="carousel">
-    <div class="image">
+    <div class="carousel-image">
       <img
         src="https://images.unsplash.com/photo-1516166328576-82e16a127024?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
     </div>
-    <div class="image hidden">
+    <div class="carousel-image hidden">
       <img
         src="https://images.unsplash.com/photo-1570294438100-bbb766244bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
     </div>
-    <div class="image hidden">
+    <div class="carousel-image hidden">
       <img
         src="https://images.unsplash.com/photo-1606125784258-570fc63c22c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1061&q=80">
     </div>
     <button class="carousel-left"><ion-icon name="chevron-back-outline"></ion-icon></button>
     <button class="carousel-right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
     <nav>
-      <button><ion-icon name="ellipse-outline"></ion-icon></button>
-      <button><ion-icon name="ellipse-outline"></ion-icon></button>
-      <button><ion-icon name="ellipse-outline"></ion-icon></button>
+      <button><ion-icon data-index="0" name="ellipse"></ion-icon></button>
+      <button><ion-icon data-index="1" name="ellipse-outline"></ion-icon></button>
+      <button><ion-icon data-index="2" name="ellipse-outline"></ion-icon></button>
     </nav>
   </div>
 </body>

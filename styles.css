@@ -24,6 +24,7 @@ body {
 }
 
 .carousel img {
+  transition: 1s;
   height: 400px;
   width: 100%;
   object-fit: cover;
@@ -32,10 +33,6 @@ body {
 .carousel button {
   background-color: transparent;
   border: 0;
-}
-
-ion-icon {
-  pointer-events: none;
 }
 
 .carousel>button {
@@ -55,6 +52,7 @@ ion-icon {
 
 .carousel-left,
 .carousel-right {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%);
@@ -76,6 +74,7 @@ ion-icon {
 .carousel nav>button {
   color: white;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .carousel nav>button:hover {
